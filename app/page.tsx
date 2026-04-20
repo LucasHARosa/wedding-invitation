@@ -1,24 +1,28 @@
-"use client"
+"use client";
 
-import { useState, useCallback, useRef } from "react"
-import { motion } from "framer-motion"
-import { Envelope } from "@/components/envelope"
-import { SectionMainInvite, SectionVenueGifts, SectionGallery } from "@/components/invitation"
+import { Envelope } from "@/components/envelope";
+import {
+  SectionGallery,
+  SectionMainInvite,
+  SectionVenueGifts,
+} from "@/components/invitation";
+import { motion } from "framer-motion";
+import { useCallback, useRef, useState } from "react";
 
 export default function WeddingInvite() {
-  const [isOpen, setIsOpen] = useState(false)
-  const invitationRef = useRef<HTMLDivElement>(null)
+  const [isOpen, setIsOpen] = useState(false);
+  const invitationRef = useRef<HTMLDivElement>(null);
 
   const handleOpen = useCallback(() => {
-    setIsOpen(true)
+    setIsOpen(true);
     setTimeout(() => {
-      window.scrollTo({ top: window.innerHeight, behavior: "smooth" })
-    }, 800)
-  }, [])
+      window.scrollTo({ top: window.innerHeight, behavior: "smooth" });
+    }, 800);
+  }, []);
 
   return (
     <main className="min-h-screen bg-background overflow-x-hidden">
-      <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
+      <section className=" flex items-center justify-center relative overflow-hidden">
         <Envelope isOpen={isOpen} onOpen={handleOpen} />
       </section>
 
@@ -35,5 +39,5 @@ export default function WeddingInvite() {
         </motion.div>
       )}
     </main>
-  )
+  );
 }
