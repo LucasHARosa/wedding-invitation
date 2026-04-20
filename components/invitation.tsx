@@ -1,30 +1,38 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import Image from "next/image"
-import { Plant } from "@/components/plant"
+import { Plant } from "@/components/plant";
+import { motion } from "framer-motion";
+import Image from "next/image";
 
 // ─── Section 1: Main Invite ───────────────────────────────────────────────────
 
 const polaroids = [
-  { src: "/imagens/8.png", rotate: "-rotate-2", caption: "A ♡ L", zIndex: "z-10" },
-  { src: "/imagens/18.png", rotate: "rotate-1", caption: "", zIndex: "z-20" },
-  { src: "/imagens/19.png", rotate: "-rotate-1", caption: "", zIndex: "z-10" },
-]
+  {
+    src: "/imagens/8.png",
+    rotate: "-rotate-4",
+    caption: "A ♡ L",
+    zIndex: "z-10",
+  },
+  { src: "/imagens/19.png", rotate: "rotate-8", caption: "", zIndex: "z-20" },
+];
 
 const galleryVariants = {
   hidden: { opacity: 0 },
   visible: { opacity: 1, transition: { staggerChildren: 0.15 } },
-}
+};
 
 const polaroidVariants = {
   hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" as const } },
-}
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: "easeOut" as const },
+  },
+};
 
 export function SectionMainInvite() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-visible bg-background py-20 px-6">
+    <section className="relative min-h-screen flex items-center overflow-visible  py-20 px-6">
       {/* Plant decorations */}
       <Plant
         src="/imagens/1.png"
@@ -74,8 +82,8 @@ export function SectionMainInvite() {
               <motion.div
                 key={i}
                 variants={polaroidVariants}
-                className={`bg-white p-3 pb-8 shadow-md ${p.rotate} ${p.zIndex} w-56 md:w-64`}
-                style={{ marginTop: i > 0 ? "-2rem" : 0 }}
+                className={`bg-white p-2 pb-8 shadow-md ${p.rotate} ${p.zIndex} w-56 md:w-64`}
+                style={{ marginTop: i > 0 ? "1rem" : 0 }}
                 whileHover={{ scale: 1.04, rotate: 0, zIndex: 30 }}
                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
               >
@@ -110,7 +118,9 @@ export function SectionMainInvite() {
           >
             Confirme a sua presença
             <br />
-            <span className="underline text-sm font-sans font-light tracking-widest">clique aqui</span>
+            <span className="underline text-sm font-sans font-light tracking-widest">
+              clique aqui
+            </span>
           </motion.a>
         </div>
 
@@ -136,7 +146,9 @@ export function SectionMainInvite() {
                 Lucas
               </h1>
               <div className="h-px bg-[oklch(0.35_0.08_140)]/30 mx-4" />
-              <p className="font-serif text-2xl text-[oklch(0.30_0.07_140)]">18 de julho</p>
+              <p className="font-serif text-2xl text-[oklch(0.30_0.07_140)]">
+                18 de julho
+              </p>
               <p className="text-sm tracking-widest text-[oklch(0.40_0.06_140)]">
                 Horário: <span className="font-serif text-2xl">15h</span>
               </p>
@@ -145,7 +157,7 @@ export function SectionMainInvite() {
         </motion.div>
       </motion.div>
     </section>
-  )
+  );
 }
 
 // ─── Section 2: Venue + Gifts ─────────────────────────────────────────────────
@@ -221,10 +233,18 @@ export function SectionVenueGifts() {
         >
           <div className="w-56 h-56 md:w-72 md:h-72 rotate-45 border-2 border-[oklch(0.35_0.08_140)] flex items-center justify-center relative bg-[oklch(0.97_0.01_90)]">
             {/* Corner ornaments */}
-            <span className="absolute -top-2 left-1/2 -translate-x-1/2 text-[oklch(0.35_0.08_140)] text-xs">✦</span>
-            <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 text-[oklch(0.35_0.08_140)] text-xs">✦</span>
-            <span className="absolute top-1/2 -left-2 -translate-y-1/2 text-[oklch(0.35_0.08_140)] text-xs">✦</span>
-            <span className="absolute top-1/2 -right-2 -translate-y-1/2 text-[oklch(0.35_0.08_140)] text-xs">✦</span>
+            <span className="absolute -top-2 left-1/2 -translate-x-1/2 text-[oklch(0.35_0.08_140)] text-xs">
+              ✦
+            </span>
+            <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 text-[oklch(0.35_0.08_140)] text-xs">
+              ✦
+            </span>
+            <span className="absolute top-1/2 -left-2 -translate-y-1/2 text-[oklch(0.35_0.08_140)] text-xs">
+              ✦
+            </span>
+            <span className="absolute top-1/2 -right-2 -translate-y-1/2 text-[oklch(0.35_0.08_140)] text-xs">
+              ✦
+            </span>
             <div className="-rotate-45 flex flex-col items-center justify-center text-center gap-2 p-6">
               <p className="font-serif text-2xl md:text-3xl text-[oklch(0.22_0.06_140)] leading-tight">
                 Lista de
@@ -242,7 +262,7 @@ export function SectionVenueGifts() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
 
 // ─── Section 3: Gallery ───────────────────────────────────────────────────────
@@ -251,17 +271,25 @@ const galleryPhotos = [
   { src: "/imagens/8.png", rotate: "-3deg", caption: "Ana & Lucas" },
   { src: "/imagens/18.png", rotate: "1.5deg", caption: "" },
   { src: "/imagens/19.png", rotate: "-1deg", caption: "" },
-]
+];
 
 const galleryContainerVariants = {
   hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { staggerChildren: 0.2, delayChildren: 0.2 } },
-}
+  visible: {
+    opacity: 1,
+    transition: { staggerChildren: 0.2, delayChildren: 0.2 },
+  },
+};
 
 const galleryItemVariants = {
   hidden: { opacity: 0, y: 40, scale: 0.95 },
-  visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.6, ease: "easeOut" as const } },
-}
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: { duration: 0.6, ease: "easeOut" as const },
+  },
+};
 
 export function SectionGallery() {
   return (
@@ -340,5 +368,5 @@ export function SectionGallery() {
         18.07.2025
       </motion.p>
     </section>
-  )
+  );
 }
