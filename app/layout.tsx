@@ -1,11 +1,13 @@
 import type { Metadata, Viewport } from 'next'
-import { Cormorant_Garamond, Montserrat } from 'next/font/google'
+import { Bodoni_Moda, Montserrat } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const cormorant = Cormorant_Garamond({ 
+const bodoni = Bodoni_Moda({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
+  display: "swap",
   variable: "--font-serif"
 });
 
@@ -33,7 +35,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pt-BR" className={`${cormorant.variable} ${montserrat.variable} bg-background`}>
+    <html lang="pt-BR" className={`${bodoni.variable} ${montserrat.variable} bg-background`}>
       <body className="font-sans antialiased">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}

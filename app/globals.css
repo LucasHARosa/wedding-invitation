@@ -79,7 +79,7 @@
 
 @theme inline {
   --font-sans: var(--font-sans), 'Montserrat', sans-serif;
-  --font-serif: var(--font-serif), 'Cormorant Garamond', serif;
+  --font-serif: var(--font-serif), 'Bodoni Moda', serif;
   --font-mono: 'Geist Mono', 'Geist Mono Fallback';
   --color-gold: var(--gold);
   --color-background: var(--background);

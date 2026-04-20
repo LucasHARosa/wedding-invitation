@@ -26,23 +26,28 @@ export function SectionMainInvite() {
           />
 
           {/* Texto sobre o frame decorativo — lado direito da imagem */}
-          <div className="absolute right-[8%] top-[10%] w-[44%] h-[80%] overflow-hidden flex flex-col items-center justify-center text-center gap-0.5">
-            <p className="font-serif text-[8.5cqw] text-[oklch(0.18_0.06_140)] leading-tight">
+          <div className="absolute right-[8%] top-[10%] w-[44%] h-[80%] overflow-hidden flex flex-col items-center justify-center text-center gap-0">
+            <p className="font-serif text-[3cqw] text-[oklch(0.18_0.06_140)] leading-[1.2]">
+              Você é nosso
+              <br />
+              convidado
+            </p>
+            <p className="font-serif text-[7.5cqw] text-[oklch(0.18_0.06_140)] leading-[1.2]">
               Ana
             </p>
-            <p className="font-serif text-[5cqw] text-[oklch(0.30_0.07_140)] leading-none">
+            <p className="font-serif text-[6.5cqw] text-[oklch(0.18_0.06_140)] leading-none">
               &amp;
             </p>
-            <p className="font-serif text-[8.5cqw] text-[oklch(0.18_0.06_140)] leading-tight">
+            <p className="font-serif text-[7.5cqw] text-[oklch(0.18_0.06_140)] leading-[1.2]">
               Lucas
             </p>
-            <p className="font-serif text-[3cqw] text-[oklch(0.30_0.07_140)] mt-[1cqw] tracking-wide">
+            <p className="font-serif text-[3cqw] text-[oklch(0.18_0.06_140)] mt-[1cqw] tracking-wide leading-[1.1]">
               18 de julho
             </p>
-            <p className="font-serif text-[3cqw] text-[oklch(0.30_0.07_140)]">
+            <p className="font-serif text-[3cqw] text-[oklch(0.18_0.06_140)] leading-[1.9]">
               Horário:
             </p>
-            <p className="font-serif text-[7.5cqw] font-semibold text-[oklch(0.18_0.06_140)]">
+            <p className="font-serif text-[6.5cqw] font-semibold text-[oklch(0.18_0.06_140)] leading-none">
               15h
             </p>
           </div>
