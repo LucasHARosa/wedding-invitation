@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -E \"\\\\.\\(png|jpg|jpeg|svg|gif|webp\\)$\")",
+      "Read(//c/Users/lucas/OneDrive/Documents/React/wedding-invitation/components/ui\" | sed 's/.tsx$/' | sed 's/.ts$/**)",
+      "Bash(xargs grep *)",
+      "Bash(awk '{print $NF}')",
+      "Bash(xargs -I {} basename {})",
+      "Bash(sed 's/.tsx$//')",
+      "Bash(npm run *)"
+    ]
+  }
+}
