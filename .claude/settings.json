@@ -7,7 +7,11 @@
       "Bash(awk '{print $NF}')",
       "Bash(xargs -I {} basename {})",
       "Bash(sed 's/.tsx$//')",
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "Bash(pnpm install *)",
+      "Bash(npm install *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)"
     ]
   }
 }
