@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export function SectionMainInvite() {
   return (
-    <section className="relative  flex items-center justify-center overflow-hidden md:py-16 py-3 md:px-6 px-0 bg-[oklch(0.97_0.01_90)]">
+    <section className="relative  flex items-center justify-center overflow-hidden md:py-10 py-3 md:px-6 px-0 bg-[oklch(0.97_0.01_90)]">
       <motion.div
         className="relative z-10 w-full max-w-3xl mx-auto"
         initial={{ opacity: 0, y: 40 }}
@@ -72,7 +72,7 @@ export function SectionMainInvite() {
 
 export function SectionVenueGifts() {
   return (
-    <section className="relative flex items-center justify-center overflow-hidden md:py-16 py-3 md:px-6 px-4">
+    <section className="relative flex items-center justify-center overflow-hidden md:py-10 py-3 md:px-6 px-4">
       <motion.div
         className="relative z-10 w-full max-w-3xl mx-auto"
         initial={{ opacity: 0, y: 40 }}
@@ -133,7 +133,7 @@ export function SectionVenueGifts() {
 
 export function SectionGallery() {
   return (
-    <section className="relative flex items-center justify-center overflow-hidden md:py-16 py-3 md:px-6 px-0 bg-[oklch(0.97_0.01_90)]">
+    <section className="relative flex items-center justify-center overflow-hidden md:py-10 py-3 md:px-6 px-0 bg-[oklch(0.97_0.01_90)]">
       <motion.div
         className="relative z-10 w-full max-w-3xl mx-auto"
         initial={{ opacity: 0, y: 40 }}
