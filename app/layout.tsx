@@ -18,6 +18,9 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: 'Ana & Lucas - Casamento',
   description: 'Você é nosso convidado especial para celebrar o nosso casamento',
+  icons: {
+    icon: '/aliancas-de-casamento.ico',
+  },
 }
 
 export const viewport: Viewport = {
