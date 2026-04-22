@@ -23,18 +23,6 @@ export const metadata: Metadata = {
   icons: {
     icon: '/aliancas-de-casamento.ico',
   },
-  openGraph: {
-    title: 'Ana & Lucas - Casamento',
-    description: 'Você é nosso convidado especial para celebrar o nosso casamento',
-    images: [
-      {
-        url: '/vetor-plano-de-coracao-basico.png',
-        width: 1200,
-        height: 630,
-        alt: 'Ana & Lucas - Casamento',
-      },
-    ],
-  },
 }
 
 export const viewport: Viewport = {
